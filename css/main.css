@@ -1,0 +1,39 @@
+
+
+:after,
+::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+li,
+ol,
+ul {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit
+}
+
+body,
+html {
+    height: 100%;
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    overflow: auto
+}
