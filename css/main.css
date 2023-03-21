@@ -34,6 +34,85 @@ body,
 html {
     height: 100%;
     line-height: 1;
-    font-family: 'Open Sans', sans-serif;
-    overflow: auto
+    font-family: 'Poppins', sans-serif;
+    overflow: auto;
+    margin: 0;
 }
+
+
+.orange-button{
+    outline: none;
+    border: none;
+    background: #FF8126;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.article-header{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.article-header span{
+    color: #FF8126;
+}
+
+
+
+/*advertisement********************************************************************************************************************************/
+
+
+.advertisement{
+    background-color: #C2E8CE;
+    position: relative;
+}
+.advertisement-p{
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+    padding: 15px 0 14px 0;
+}
+
+.close-btn {
+    top: 15px;
+    right: 51px;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+   
+  }
+  
+  .close-btn:before,
+  .close-btn:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background-color: #333;
+    top: -1px;
+  }
+  
+  .close-btn:before {
+    transform: rotate(45deg);
+  }
+  
+  .close-btn:after {
+    transform: rotate(-45deg);
+  }
+  
+  
