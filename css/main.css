@@ -94,7 +94,7 @@ html {
     border: none;
     background-color: transparent;
     z-index: 2;
-   
+    cursor: pointer;
   }
   
   .close-btn:before,
@@ -116,3 +116,78 @@ html {
   }
   
   
+
+  /**********************************************--/
+  /*navigaion/*/
+
+
+
+.navigation ul li{
+    position: relative;
+    float: left;
+    padding-bottom: 2px;
+}
+
+.navigation ul li a{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #1F1F1F;
+    padding: 0 20px 0 20px;
+    position: relative;
+}
+
+.navigation ul li a:hover{
+    color: #FF8126;
+}
+
+
+
+.v-shape{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+
+.v-shape:before,
+.v-shape:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  background-color: #333;
+
+}
+
+.v-shape:before {
+  transform: rotate(45deg);
+  left: 3px;
+}
+
+.v-shape:after {
+  transform: rotate(-45deg);
+}
+
+.navigation ul li ul{
+    position: absolute;
+    left: 20px;
+    top: 22px;
+    width: auto;
+    padding: 0;
+    display: none;
+    
+}
+
+.navigation ul li ul li{
+   width: 100%;
+   border-top: 1px solid #FF8126;
+   padding-block: 2px;
+}
+
+.navigation ul li ul li a{
+   padding: 0px;
+}
+
+.navigation ul li:hover >ul{
+    display: initial;
+}
