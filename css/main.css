@@ -20,6 +20,7 @@ ul {
     list-style: none
 }
 
+p,
 h1,
 h2,
 h3,
@@ -27,7 +28,9 @@ h4,
 h5,
 h6 {
     font-weight: inherit;
-    font-size: inherit
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body,
@@ -42,6 +45,7 @@ html {
 .container{
     margin: auto;
     max-width: 1170px;
+    padding-inline: 10px;
 }
 
 
@@ -75,6 +79,9 @@ html {
 
 /*advertisement********************************************************************************************************************************/
 
+.advertisement .container{
+    padding-inline: 0;
+}
 
 .advertisement{
     background-color: #C2E8CE;
@@ -127,10 +134,9 @@ html {
 
 header .container{
     display: flex;
-    padding: 20px 5px;
     align-items: center;
     justify-content: flex-start;
-  
+    padding-block: 20px;
 }
 
 
@@ -234,6 +240,10 @@ header .container{
     transition: all 0.3s;
 }
 
+@media (max-width: 1029px){
+
+}
+
 .logo-link{
     width: 60px;
     height: 60px;
@@ -270,7 +280,7 @@ header .container{
     
 }
 .notification{
-    position: relative
+    position: relative;
 }
 
 .notification::after{
@@ -287,4 +297,123 @@ header .container{
     border-radius: 50%;
     right: 0px;
     top: 5px;
+}
+
+
+
+/*----------------------- Support Your Local Artisans -----------------------------*/
+
+.headline{
+    font-family: 'Cormorant';
+    font-weight: 700;
+    color: #1F1F1F;
+}
+
+.browse-bands-headline{
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.sub-headline{
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 46px;
+    margin-bottom: 28px;
+}
+
+.browse-bands{
+    background: url("../source/support-background.webp") center/cover no-repeat;
+    
+}
+
+.browse-bands .container{
+    padding: 125px 10px 195px;
+}
+
+.browse-bands-button{
+    padding: 8px 36px 10px;
+    margin-left: 5px;
+}
+
+
+
+
+/***************** latest offers *********************/
+
+.latest-offers .container{
+    padding-block: 80px;
+}
+.card-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    grid-column-gap: 30px;
+}
+.card{
+    border-radius: 20px;
+    background: #F7F5F0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+
+}
+
+.card-image-wrap{
+    width: auto;
+}
+
+.card-image-wrap img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.product-name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.product-price{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.product-price .orange-price{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF8126;
+}
+
+.product-price .dashed-price{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration-line: line-through;
+    color: #656565;
+}
+
+.card-content-wrap{
+    padding: 16px 19px 30px;
+}
+
+.card-button{
+    padding: 6px 0px 7px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.card-button-container{
+    text-align: center;
+}
+
+.latest-offers-article{
+    margin-bottom: 33px;
+}
+
+@media (max-width: 1050px) {
+    
 }
