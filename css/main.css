@@ -76,8 +76,13 @@ html {
 }
 
 
+body._lock{
+    overflow: hidden;
+}
+
 
 /*advertisement********************************************************************************************************************************/
+
 
 .advertisement .container{
     padding-inline: 0;
@@ -85,7 +90,9 @@ html {
 
 .advertisement{
     background-color: #C2E8CE;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .advertisement-p{
     color: black;
@@ -139,7 +146,9 @@ header .container{
     padding-block: 20px;
 }
 
-
+header{
+    transition: all 0.3s;
+}
 
 .navigation ul{
     padding: 0;
@@ -299,6 +308,189 @@ header .container{
     top: 5px;
 }
 
+.burger-icon{
+    display: none;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.logo-subgroup{
+    display: flex;
+}
+@media (max-width: 1029px) {
+    .burger-icon{
+        display: block;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        margin: auto 6px auto 0;
+        border-radius: 50%;
+        background-color: #FF8126;
+    }
+    
+    .burger-icon span,
+    .burger-icon::before,
+    .burger-icon::after{
+        left: 44%; 
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        transition: all 0.3s ease 0s;
+        background-color: #ffffff;
+    }
+    
+    
+    .burger-icon::before,
+    .burger-icon::after{
+        content: "";
+    }
+    
+    .burger-icon::before{
+        top: 6px;
+    }
+    
+    .burger-icon::after{
+        bottom: 6px;
+    }
+    
+    .burger-icon span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    
+    .burger-icon._active::before{
+        border-radius: 27px;
+        transform: rotate(-45deg);
+        width: 4px;
+        height: 18px;
+        top: 22%;
+    }
+    
+    .burger-icon._active::after{
+        border-radius: 27px;
+        transform: rotate(45deg);
+        width: 4px;
+        height: 18px;
+        bottom: 22%;
+    }
+    
+    .navigation{
+        position: absolute;
+        top: -100%;
+        transition: 0.3s;
+    }
+    
+    .logo-group{
+        order: -1;
+        margin-left: 6px;
+    }
+
+    .logo-link{
+        border-color: #BFBFBF;
+    }
+    
+    .bakery-wrap{
+        margin-inline: auto;
+    }
+
+    .logo-subgroup{
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .logo-link:first-child{
+        height: 32px;
+        width: 32px;
+        margin-right: 0;
+    }
+
+    .logo-link-wrap img{
+        width: 36%;
+        height: auto;
+    }
+
+    header{
+        position: fixed;;
+        top: 50px;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    header.top{
+        top: 0px;
+    }
+    .header .container{
+        padding-block: 10px;
+        
+    }
+
+    .header._active .container{
+        padding-bottom: 147px;
+    }
+
+    .header._active .container .navigation{
+        position: fixed;
+        left: 0;
+        right: 0;
+        display: initial;
+        top: 255px;
+        background: #ffffff;
+        height: calc(100% - 255px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .header._active .container .logo-group .logo-subgroup{
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        position: fixed;
+        width: 130px;
+        justify-content: space-between;
+        top: 176px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s;
+    }
+
+    .header._active .container .logo-group .logo-subgroup a{
+        height: 60px;
+        width: 60px;
+        
+    }
+
+    .header._active .container .navigation ul li{
+        width: 100%;
+        border: none;
+        margin-bottom: 30px;
+    }
+
+    .header._active .container .navigation ul li a{
+        padding-left: 16px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1F1F1F;
+
+    }
+
+    .header._active .container .navigation ul li ul{
+        position: relative;
+        width: 100%;
+        top: 10px;
+        left: 10px;
+    }
+    .header._active .container .navigation ul li ul li{
+        background: #ffffff;
+        margin-bottom: 5px;
+    }
+
+
+
+
+}
 
 
 /*----------------------- Support Your Local Artisans -----------------------------*/
@@ -328,6 +520,8 @@ header .container{
 
 .browse-bands .container{
     padding: 125px 10px 195px;
+    /* max-width: 1280px;
+    margin: auto; */
 }
 
 .browse-bands-button{
@@ -335,6 +529,43 @@ header .container{
     margin-left: 5px;
 }
 
+@media (max-width: 1029px) {
+
+    .browse-bands-headline{
+        font-weight: 700;
+        font-size: 28.7719px;
+        line-height: 35px;
+        margin-bottom: 2px;
+    }
+    
+    .sub-headline{
+        font-weight: 400;
+        font-size: 14.9614px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+
+    .browse-bands{
+        margin-top: 160px;
+        transition: all 0.3s;
+        background: url("../source/browse-bands-bg-mobile.webp") center/cover no-repeat;
+    }
+
+    .browse-bands .container{
+        text-align: center;
+        padding: 25px 16px 301px 15px;
+    }
+
+    .browse-bands.top{
+        margin-top: 110px;
+    }
+
+    .browse-bands-button{
+        margin-left: -1px;
+    }
+
+    
+}
 
 
 
@@ -414,6 +645,19 @@ header .container{
     margin-bottom: 33px;
 }
 
-@media (max-width: 1050px) {
-    
+@media (max-width: 1029px) {
+    .latest-offers .container{
+        padding-left: 46px;
+        padding-right: 44px;
+        padding-top: 30px;
+    }
+
+    .latest-offers-article{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 23px;
+    }
 }
+
+
