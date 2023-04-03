@@ -6,6 +6,7 @@ advertisement_btn.addEventListener("click",function(){
     advertisement.style.display = 'none';
     header.classList.add('top');
     document.querySelector(".browse-bands").classList.add('top');
+   
 });
 
 
@@ -16,6 +17,7 @@ if (iconMenu) {
         iconMenu.classList.toggle('_active');
         header.classList.toggle('_active');
         header.classList.add('top');
+        document.querySelector(".advertisement").classList.add('top');
     });
 }
 

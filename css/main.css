@@ -133,6 +133,10 @@ body._lock{
   .close-btn:after {
     transform: rotate(-45deg);
   }
+
+  .advertisement.top{
+    position: absolute;
+  }
   
   
 
