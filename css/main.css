@@ -552,7 +552,7 @@ header{
     }
 
     .browse-bands{
-        margin-top: 160px;
+        margin-top: 118px;
         transition: all 0.3s;
         background: url("../source/browse-bands-bg-mobile.webp") center/cover no-repeat;
     }
@@ -563,7 +563,7 @@ header{
     }
 
     .browse-bands.top{
-        margin-top: 110px;
+        margin-top: 118px;
     }
 
     .browse-bands-button{
