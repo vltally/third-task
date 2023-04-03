@@ -90,7 +90,7 @@ body._lock{
 
 .advertisement{
     background-color: #C2E8CE;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
@@ -148,6 +148,11 @@ header .container{
 
 header{
     transition: all 0.3s;
+    z-index: 999;
+}
+
+.header.top{
+    margin-top: 0;
 }
 
 .navigation ul{
@@ -222,7 +227,7 @@ header{
     padding: 0;
     display: none;
     z-index: 3;
-    background-color: white;
+
 }
 
 .navigation ul li ul li{
@@ -417,6 +422,7 @@ header{
         top: 50px;
         width: 100%;
         background-color: #ffffff;
+        margin-top: 0;
     }
 
     header.top{
@@ -645,6 +651,14 @@ header{
     margin-bottom: 33px;
 }
 
+.latest-offers .container{
+    padding-bottom: 0;
+}
+
+.latest-offers{
+    margin-bottom: 50px;
+}
+
 @media (max-width: 1029px) {
     .latest-offers .container{
         padding-left: 46px;
@@ -661,3 +675,210 @@ header{
 }
 
 
+
+/**********************/
+/*why choose*/
+
+.why-choose-article-header{
+    margin-bottom: 40px;
+}
+
+.article-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-column-gap: 30px;
+}
+
+.article-card{
+    margin-bottom: 50px;
+}
+
+.article-card-image-wrap{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.article-card-image-wrap img{
+    width: 100%;
+    height: auto;
+}
+
+.article-card-header{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Cormorant';
+    margin-bottom: 10px;
+    white-space:pre-line;
+}
+
+.article-card-p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.low-letterspace{
+    letter-spacing: -0.0025em;
+}
+
+.why-choose{
+    margin-bottom: 27px;
+}
+
+@media (max-width: 1029px) {
+    .article-card-header{
+        white-space: normal;
+    }
+
+    .why-choose .container{
+        padding-inline: 16px;
+    }
+
+    .article-card-image-wrap{
+        margin-inline: auto;
+    }
+
+    .why-choose-article-header{
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .why-choose{
+        margin-bottom: 40px;
+    }
+}
+
+
+/*****************************/
+/*who makes*/
+
+.who-makes .container{
+    padding-bottom: 100px;
+}
+.who-makes-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.who-makes-header{
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.who-makes-p{
+    margin-bottom: 21px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.who-makes-list{
+    padding-left: 39px;
+    
+}
+.who-makes-list li{
+    position: relative;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 19px;
+}
+
+.who-makes-list li:last-child{
+    margin-bottom: 13px;
+}
+
+.who-makes-list li:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background-color: #ffffff;
+    clip-path: polygon(0% 60%, 40% 100%, 100% 40%, 90% 20%, 40% 70%, 15% 40%);
+    z-index: 2;
+    position: absolute;
+    left: -32px;
+    top: 6px;
+}
+
+.who-makes-list li:after{
+    content: "";
+    background-color: #FF8126;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: -39px;
+    top: 0px;
+    position: absolute;
+
+}
+
+.who-makes-button{
+    padding: 8px 30px 10px;
+    max-width: 270px;
+}
+
+.who-makes-image-wrap picture > *{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.who-makes-image-wrap{
+    max-width: 570px;
+    max-height: 487px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    align-content: center;
+}
+
+@media (max-width: 860px) {
+    .who-makes-grid{
+        grid-template-columns: 1fr;
+    }
+    .who-makes-image-wrap{
+        grid-column: auto;
+        grid-row: 3/4;
+        justify-self: center;
+        margin-bottom: 3px;
+    }
+
+    .who-makes-image-wrap picture > *{
+        aspect-ratio: 82/35;
+        object-fit: cover;
+    }
+
+    .who-makes .container{
+        padding-inline: 16px;
+    }
+
+    .who-makes-header{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .who-makes-button{
+        justify-self: center;
+    }
+
+    .who-makes-p{
+        margin-bottom: 17px;
+    }
+    
+    .who-makes-list li{
+        margin-bottom: 18px;
+    }
+
+    .who-makes-list{
+        margin-bottom: 10px;
+    }
+
+}
