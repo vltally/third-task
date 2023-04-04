@@ -86,6 +86,10 @@ body._lock{
 
 .advertisement .container{
     padding-inline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
 
 .advertisement{
@@ -93,6 +97,8 @@ body._lock{
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 10;
+    height: 50px;
 }
 .advertisement-p{
     color: black;
@@ -100,8 +106,10 @@ body._lock{
     font-size: 14px;
     line-height: 21px;
     text-align: center;
+    vertical-align: middle;
     margin: 0;
-    padding: 15px 0 14px 0;
+    /* padding: 15px 0 14px 0; */
+    
 }
 
 .close-btn {
@@ -138,6 +146,24 @@ body._lock{
     position: absolute;
   }
   
+
+  @media (max-width: 590px) {
+    .advertisement-p{
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: left;
+    }
+
+    .advertisement .container{
+       padding: 3px 40px 0 16px;
+       justify-content: left
+    }
+    .close-btn{
+        right: 13px;
+    }
+    
+  }
   
 
   /**********************************************--/
@@ -389,6 +415,8 @@ header{
         position: absolute;
         top: -100%;
         transition: 0.3s;
+        visibility: hidden;
+        opacity: 0;
     }
     
     .logo-group{
@@ -451,6 +479,8 @@ header{
         height: calc(100% - 255px);
         overflow-y: scroll;
         overflow-x: hidden;
+        visibility:visible;
+        opacity: 1;
     }
 
     .header._active .container .logo-group .logo-subgroup{
@@ -761,7 +791,7 @@ header{
 /*who makes*/
 
 .who-makes .container{
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 .who-makes-grid{
     display: grid;
@@ -885,4 +915,151 @@ header{
         margin-bottom: 10px;
     }
 
+}
+
+
+/*******************************/
+/*learn more */
+
+.learn-more{
+    background: url("../source/charity-bg.webp") center/cover no-repeat;
+    background-color: #6090C3;
+}
+
+.learn-more .container{
+    padding-block: 60px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.learn-more-header{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+
+.learn-more-image-wrap{
+    margin-bottom: 30px;
+}
+
+.learn-more-image-wrap img{
+    max-width: 100px;
+    max-height: 130px;
+}
+
+.learn-more-button{
+    padding: 8px 31px 10px;
+}
+
+@media (max-width: 590px) {
+    .learn-more-header{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        padding-inline: 10px;
+    }
+
+    
+    .learn-more .container{
+        padding-top: 50px;
+    }
+
+    .learn-more .container{
+        margin-bottom: 50px;
+    }
+}
+
+
+/*************************/
+
+/*surprise*/
+
+.surprise-flex{
+    display: flex;
+}
+
+.surprise-flex > div{
+    flex-basis: 50%;
+}
+
+.surprise-content-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.surprise-header{
+    white-space:pre-line;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.surprise-p{
+    white-space: pre-line;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.surprise-button{
+    max-width: 140px;
+    padding: 8px 31px 10px;
+
+}
+
+.surprise-image-wrap picture > *{
+    width: 100%;
+    height: auto;
+}
+
+.surprise-image-wrap picture{
+    width: 100%;
+    height: 100%;
+}
+.surprise-image-wrap{
+    padding-right: 30px;
+}
+
+
+@media (max-width: 860px) {
+   
+    .surprise-image-wrap picture > *{
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+    }
+    .surprise-header{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width:590px) {
+    .surprise-image-wrap{
+        display: none;
+    }
+
+    .surprise-content-wrap{
+        flex-basis: 100%!important;
+    }
+    .surprise .container{
+        padding-inline: 16px;
+    }
+
+    .surprise-button{
+        align-self: center;
+    }
+
+    .surprise-header{
+        margin-bottom: 30px;
+    }
+
+    .surprise-p{
+        margin-bottom: 30px;
+    }
 }
