@@ -21,3 +21,25 @@ if (iconMenu) {
     });
 }
 
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 'auto',
+    touchRation: 1.5,
+    watchOverflow: true,
+    // simulateTouch:false,
+    spaceBetween: 20,
+    slidesPerGroup: 1,
+
+    breakpoints: {
+        360:{
+            spaceBetween: 30
+        },
+        1029:{
+            spaceBetween: 20
+        }
+    }
+});
