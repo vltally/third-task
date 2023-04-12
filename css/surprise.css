@@ -1,0 +1,118 @@
+.surprise{
+    margin-bottom: 80px;
+}
+
+.surprise-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.surprise-flex > div{
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+}
+
+.surprise-content-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.surprise-header{
+    white-space:pre-line;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.surprise-p{
+    white-space: pre-line;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.surprise-button{
+    max-width: 140px;
+    padding: 8px 31px 10px;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+    cursor: pointer;
+}
+
+.surprise-button:hover{
+    background-color: #dd7022;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+.surprise-image-wrap picture > *{
+    width: 100%;
+    height: auto;
+}
+
+.surprise-image-wrap picture{
+    width: 100%;
+    height: 100%;
+}
+.surprise-image-wrap{
+    padding-right: 30px;
+}
+
+
+@media (max-width: 860px) {
+   
+    .surprise-image-wrap picture > *{
+       height: 100%;
+       width: 100%;
+       -o-object-fit: cover;
+          object-fit: cover;
+    }
+    .surprise-header{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    
+    .surprise{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:590px) {
+    .surprise-image-wrap{
+        display: none;
+    }
+
+    .surprise-content-wrap{
+        -ms-flex-preferred-size: 100%!important;
+            flex-basis: 100%!important;
+    }
+    .surprise .container{
+        padding-inline: 16px;
+    }
+
+    .surprise-button{
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+    }
+
+    .surprise-header{
+        margin-bottom: 30px;
+    }
+
+    .surprise-p{
+        margin-bottom: 30px;
+    }
+}

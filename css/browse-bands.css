@@ -1,0 +1,94 @@
+.headline{
+    font-family: 'Cormorant';
+    font-weight: 700;
+    color: #1F1F1F;
+}
+
+.browse-bands-headline{
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.sub-headline{
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 46px;
+    margin-bottom: 28px;
+}
+
+.browse-bands{
+    background: url("../source/support-background.webp") center/cover no-repeat;
+    
+}
+
+.browse-bands .container{
+    padding: 125px 10px 195px;
+    /* max-width: 1280px;
+    margin: auto; */
+}
+
+.browse-bands-button{
+    padding: 8px 36px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+.browse-bands-button:hover{
+    background-color: #dd7022;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+@media (max-width: 1029px) {
+
+    .browse-bands-headline{
+        font-weight: 700;
+        font-size: 28.7719px;
+        line-height: 35px;
+        margin-bottom: 2px;
+    }
+    
+    .sub-headline{
+        font-weight: 400;
+        font-size: 14.9614px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+
+    .browse-bands{
+        margin-top: 118px;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        background: url("../source/browse-bands-bg-mobile.webp") center/cover no-repeat;
+    }
+
+    .browse-bands .container{
+        text-align: center;
+        padding: 25px 16px 301px 15px;
+    }
+
+    .browse-bands.top{
+        margin-top: 118px;
+    }
+
+    .browse-bands-button{
+        margin-left: -1px;
+    }
+
+    .browse-bands{
+        margin-bottom: 50px;
+    }
+
+    
+}
+
+@media (max-width: 590px) {
+    .browse-bands{
+        margin-bottom: 0;
+    }
+}

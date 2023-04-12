@@ -1,0 +1,71 @@
+.tell-a-friend{
+    background: url("../source/tell-bg.webp") center/cover no-repeat;
+    background-color: #FF81261F;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+}
+
+.tell-a-friend .container{
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.tell-a-friend-header{
+    margin-bottom: 30px;
+}
+
+.social-buttons{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
+}
+
+.social-buttons a{
+    margin: 0 15px 10px;
+}
+
+.social-buttons img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+.social-buttons img:hover{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+@media (max-width:860px) {
+    .tell-a-friend .container{
+        padding-inline: 45px;
+    }
+
+    .tell-a-friend{
+        padding-top: 85px;
+        margin-bottom: 50px;
+    }
+
+    .social-buttons a{
+        margin-bottom: 45px;
+        margin-bottom: 30px;
+    }
+}

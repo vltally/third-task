@@ -1,0 +1,115 @@
+.on-instagram{
+    margin-bottom: 70px;
+}
+
+.on-instagram .container{
+    position: relative;
+    /* padding-inline: calc(15px + (60px - 15px) * ((100vw - 360px) / (1280 - 360))); */
+}
+
+.swiper-container{
+    position: relative;
+    padding-inline: 50px;
+}
+
+.on-instagram-header{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #1F1F1F;
+    margin-bottom: 30px;
+}
+
+.on-instagram-header span{
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #FF8126;
+}
+
+
+.swiper--slide{
+    height: 156px!important;
+    width: 156px!important;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    margin: 10px;
+}
+
+.swiper--slide:last-child{
+    margin-right: 10px!important;
+}
+
+.swiper--slide img{
+    width: 100%;
+    height: auto;
+}
+
+.swiper{
+    max-width: 1070px;
+}
+
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    color: #fff;
+    font-size: 10px !important;
+}
+
+.swiper-button-prev::after{
+    color: #b2b2b2;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    border-radius: 50%;
+    width: 40px !important; 
+    height: 40px !important;
+    top: 50% !important;
+    position: absolute;
+}
+
+.swiper-button-prev{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #B3B3B3;
+    left: 0% !important;
+}
+
+.swiper-button-next{
+    background: #FF8126;
+    right: 0% !important;
+}
+
+@media (max-width: 860px){
+
+    .swiper-button-prev, .swiper-button-next{
+        display: none!important;
+    }
+
+    .swiper-container{
+        padding-inline: 0;
+    }
+
+    .on-instagram .container{
+        padding-inline: 16px;
+    }
+
+    .swiper--slide{
+        height: 218px!important;
+        width: 218px!important;
+        background: #FFFFFF;
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        padding: 20px;
+    }
+
+    .on-instagram-header{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+}

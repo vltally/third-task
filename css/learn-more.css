@@ -1,0 +1,61 @@
+.learn-more{
+    background: url("../source/charity-bg.webp") center/cover no-repeat;
+    background-color: #6090C3;
+}
+
+.learn-more .container{
+    padding-block: 60px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.learn-more-header{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+
+.learn-more-image-wrap{
+    margin-bottom: 30px;
+}
+
+.learn-more-image-wrap img{
+    max-width: 100px;
+    max-height: 130px;
+}
+
+.learn-more-button{
+    padding: 8px 31px 10px;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+    cursor: pointer;
+}
+
+.learn-more-button:hover{
+    background-color: #dd7022;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+@media (max-width: 590px) {
+    .learn-more-header{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        padding-inline: 10px;
+    }
+
+    
+    .learn-more .container{
+        padding-top: 50px;
+    }
+
+    .learn-more .container{
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,110 @@
+.latest-offers .container{
+    padding-block: 80px;
+}
+.card-group{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    grid-column-gap: 30px;
+}
+.card{
+    border-radius: 20px;
+    background: #F7F5F0;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+
+}
+
+.card-image-wrap{
+    width: auto;
+}
+
+.card-image-wrap img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.product-name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.product-price{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.product-price .orange-price{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF8126;
+}
+
+.product-price .dashed-price{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    color: #656565;
+}
+
+.card-content-wrap{
+    padding: 16px 19px 30px;
+}
+
+.card-button{
+    padding: 6px 0px 7px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    cursor: pointer;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+.card-button:hover{
+    background-color: #dd7022;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+.card-button-container{
+    text-align: center;
+}
+
+.latest-offers-article{
+    margin-bottom: 33px;
+}
+
+.latest-offers .container{
+    padding-bottom: 0;
+}
+
+.latest-offers{
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1029px) {
+    .latest-offers .container{
+        padding-left: 46px;
+        padding-right: 44px;
+        padding-top: 30px;
+    }
+
+    .latest-offers-article{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 23px;
+    }
+}
