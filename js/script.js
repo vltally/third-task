@@ -28,15 +28,16 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
     slidesPerView: 'auto',
-    touchRation: 1.5,
+    freeMode: true,
+    touchRation: 1.2,
     watchOverflow: true,
-    // simulateTouch:false,
     spaceBetween: 20,
     slidesPerGroup: 1,
 
     breakpoints: {
         360:{
-            spaceBetween: 30
+            spaceBetween: 30,
+            
         },
         1029:{
             spaceBetween: 20

@@ -369,7 +369,7 @@ header{
         left: 0;
         right: 0;
         display: initial;
-        top: 255px;
+        top: 254px;
         background: #ffffff;
         height: calc(100% - 255px);
         overflow-y: scroll;
@@ -438,6 +438,7 @@ header{
         width: fit-content;
         top: 10px;
         left: 10px;
+        
       
     }
     .header._active .container .navigation ul li ul li{
@@ -446,6 +447,11 @@ header{
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
+        
+    }
+
+    .header._active .container .navigation ul li ul li a{
+        font-size: 18px;
     }
 
 
@@ -461,4 +467,8 @@ header{
             flex-direction: column;
 }
 
+    .v-shape{
+        transform: rotate(-90deg);
+        top: 18px;
+    }
 }

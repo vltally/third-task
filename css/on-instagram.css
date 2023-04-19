@@ -83,6 +83,9 @@
 }
 
 @media (max-width: 860px){
+    .swiper-container{
+        margin-left: -10px;
+    }
 
     .swiper-button-prev, .swiper-button-next{
         display: none!important;
